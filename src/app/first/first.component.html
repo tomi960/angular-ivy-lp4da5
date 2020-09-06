@@ -1,0 +1,19 @@
+<div class="button-wrapper">
+    <div class="control">
+        <strong>Szerokość {{width}}px</strong>
+        <button (click)="decreaseWidth()">-</button>
+        <button (click)="increaseWidth()">+</button>
+    </div>
+
+    <div class="control">
+        Wysokość {{height}}px
+        <button (click)="decreaseHeight()">-</button>
+        <button (click)="increaseHeight()">+</button>
+    </div>
+
+    <div class="class-control">
+        <button class="gradient-bw" (click)="onClassChange('gradient-bw')">Czarno-biały</button>
+        <button class="gradient-multicolor" (click)="onClassChange('gradient-multicolor')">Multicolor</button>
+    </div>
+</div>
+

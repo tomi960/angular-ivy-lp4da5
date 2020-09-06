@@ -1,0 +1,22 @@
+<app-first
+  [width]="width"
+  [height]="height"
+  (widthChange)="widthChange($event)"
+  (heightChange)="heightChange($event)"
+  (colorChange)="colorChange($event)"
+  >
+</app-first>
+
+<section class="scene">
+  <div
+    class="figure"
+    [ngClass]="{'gradient-multicolor': currentClass === 'gradient-multicolor',
+    'gradient-bw': currentClass === 'gradient-bw'
+  }"
+  [ngStyle]="{
+    'width.px': width,
+    'height.px': height}"
+  >
+    <div class="inner"></div>
+  </div>
+</section>
